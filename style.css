@@ -1,0 +1,130 @@
+/* Базовые стили и сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 1. Свойство CSS: Фоновая заливка шапки */
+.header {
+    background-color: #2c1e1a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Главный блок (Hero) */
+.hero {
+    background: linear-gradient(135deg, #4a3525 0%, #2c1e1a 100%); /* Градиентная заливка */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* 2. Свойство CSS: Самостоятельно освоенные эффекты (скругление, градиент кнопки, наведение) */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Градиент кнопки */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px; /* Скругление кнопки */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Изменение цвета кнопки при наведении курсора мыши */
+    transform: scale(1.05);
+}
+
+/* Секция меню */
+.menu {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.menu h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Скругление карточки товара */
+    width: 300px;
+    padding: 20px;
+    /* 3. Свойство CSS: Изменение полей и внутренних отступлов */
+    padding-bottom: 25px; 
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Оптимизация отображения изображений */
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #b25d3b;
+}
+
+/* Подвал */
+.footer {
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #feb47b;
+    text-decoration: none;
+}
